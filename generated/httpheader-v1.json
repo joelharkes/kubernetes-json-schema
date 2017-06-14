@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/httpheader-v1.json",
+    "name": "httpheader-v1",
+    "description": "HTTPHeader describes a custom header to be used in HTTP probes",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "The header field name"
+        },
+        "value": {
+            "type": [
+                "string"
+            ],
+            "description": "The header field value"
+        }
+    }
+}

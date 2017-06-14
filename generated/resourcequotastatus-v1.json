@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/resourcequotastatus-v1.json",
+    "name": "resourcequotastatus-v1",
+    "description": "Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding.",
+    "type": "object",
+    "properties": {
+        "hard": {
+            "type": [
+                "object"
+            ],
+            "description": "Hard is the set of enforced hard limits for each named resource. More info: http://releases.k8s.io/HEAD/docs/design/admission_control_resource_quota.md#admissioncontrol-plugin-resourcequota"
+        },
+        "used": {
+            "type": [
+                "object"
+            ],
+            "description": "Used is the current observed total usage of the resource in the namespace."
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/eventsource-v1.json",
+    "name": "eventsource-v1",
+    "description": "EventSource contains information for an event.",
+    "type": "object",
+    "properties": {
+        "component": {
+            "type": [
+                "string"
+            ],
+            "description": "Component from which the event is generated."
+        },
+        "host": {
+            "type": [
+                "string"
+            ],
+            "description": "Node name on which the event is generated."
+        }
+    }
+}

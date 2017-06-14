@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstate-v1.json",
+    "name": "containerstate-v1",
+    "description": "ContainerState holds a possible state of container. Only one of its members may be specified. If none of them is specified, the default one is ContainerStateWaiting.",
+    "type": "object",
+    "properties": {
+        "running": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstaterunning-v1.json"
+        },
+        "terminated": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstateterminated-v1.json"
+        },
+        "waiting": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstatewaiting-v1.json"
+        }
+    }
+}

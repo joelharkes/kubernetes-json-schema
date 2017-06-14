@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/info-version.json",
+    "name": "info-version",
+    "description": "Info contains versioning information. how we'll want to distribute that information.",
+    "type": "object",
+    "properties": {
+        "buildDate": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        },
+        "compiler": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        },
+        "gitCommit": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        },
+        "gitTreeState": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        },
+        "gitVersion": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        },
+        "goVersion": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        },
+        "major": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        },
+        "minor": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        },
+        "platform": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        }
+    }
+}

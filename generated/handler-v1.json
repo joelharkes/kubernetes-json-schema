@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/handler-v1.json",
+    "name": "handler-v1",
+    "description": "Handler defines a specific action that should be taken",
+    "type": "object",
+    "properties": {
+        "exec": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/execaction-v1.json"
+        },
+        "httpGet": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/httpgetaction-v1.json"
+        },
+        "tcpSocket": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/tcpsocketaction-v1.json"
+        }
+    }
+}

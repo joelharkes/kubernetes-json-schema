@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/photonpersistentdiskvolumesource-v1.json",
+    "name": "photonpersistentdiskvolumesource-v1",
+    "description": "Represents a Photon Controller persistent disk resource.",
+    "type": "object",
+    "properties": {
+        "fsType": {
+            "type": [
+                "string"
+            ],
+            "description": "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
+        },
+        "pdID": {
+            "type": [
+                "string"
+            ],
+            "description": "ID that identifies Photon Controller persistent disk"
+        }
+    }
+}

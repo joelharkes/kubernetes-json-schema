@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/networkpolicyspec-v1beta1.json",
+    "name": "networkpolicyspec-v1beta1",
+    "description": "This section contains definitions for objects used in the Kubernetes APIs.",
+    "type": "object",
+    "properties": {
+        "ingress": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/networkpolicyingressrule-v1beta1.json"
+            }
+        },
+        "podSelector": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/labelselector-unversioned.json"
+        }
+    }
+}

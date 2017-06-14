@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/apiversion-v1beta1.json",
+    "name": "apiversion-v1beta1",
+    "description": "An APIVersion represents a single concrete version of an object model.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "Name of this version (e.g. 'v1')."
+        }
+    }
+}

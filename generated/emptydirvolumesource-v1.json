@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/emptydirvolumesource-v1.json",
+    "name": "emptydirvolumesource-v1",
+    "description": "Represents an empty directory for a pod. Empty directory volumes support ownership management and SELinux relabeling.",
+    "type": "object",
+    "properties": {
+        "medium": {
+            "type": [
+                "string"
+            ],
+            "description": "What type of storage medium should back this directory. The default is \"\" which means to use the node's default medium. Must be an empty string (default) or Memory. More info: http://kubernetes.io/docs/user-guide/volumes#emptydir"
+        }
+    }
+}

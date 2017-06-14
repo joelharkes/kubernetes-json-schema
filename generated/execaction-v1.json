@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/execaction-v1.json",
+    "name": "execaction-v1",
+    "description": "ExecAction describes a \"run in container\" action.",
+    "type": "object",
+    "properties": {}
+}

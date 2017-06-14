@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstatewaiting-v1.json",
+    "name": "containerstatewaiting-v1",
+    "description": "ContainerStateWaiting is a waiting state of a container.",
+    "type": "object",
+    "properties": {
+        "message": {
+            "type": [
+                "string"
+            ],
+            "description": "Message regarding why the container is not yet running."
+        },
+        "reason": {
+            "type": [
+                "string"
+            ],
+            "description": "(brief) reason the container is not yet running."
+        }
+    }
+}

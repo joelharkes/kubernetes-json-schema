@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/poddisruptionbudgetstatus-v1beta1.json",
+    "name": "poddisruptionbudgetstatus-v1beta1",
+    "description": "A ThirdPartyResource is a generic representation of a resource, it is used by add-ons and plugins to add new resource types to the API.  It consists of one or more Versions of the api.",
+    "type": "object",
+    "properties": {
+        "currentHealthy": {
+            "type": [
+                "integer"
+            ],
+            "description": "current number of healthy pods"
+        },
+        "desiredHealthy": {
+            "type": [
+                "integer"
+            ],
+            "description": "minimum desired number of healthy pods"
+        },
+        "disruptedPods": {
+            "type": [
+                "object"
+            ],
+            "description": "DisruptedPods contains information about pods whose eviction was processed by the API server eviction subresource handler but has not yet been observed by the PodDisruptionBudget controller. A pod will be in this map from the time when the API server processed the eviction request to the time when the pod is seen by PDB controller as having been marked for deletion (or after a timeout). The key in the map is the name of the pod and the value is the time when the API server processed the eviction request. If the deletion didn't occur and a pod is still there it will be removed from the list automatically by PodDisruptionBudget controller after some time. If everything goes smooth this map should be empty for the most of the time. Large number of entries in the map may indicate problems with pod deletions."
+        },
+        "disruptionsAllowed": {
+            "type": [
+                "integer"
+            ],
+            "description": "Number of pod disruptions that are currently allowed."
+        },
+        "expectedPods": {
+            "type": [
+                "integer"
+            ],
+            "description": "total number of pods counted by this disruption budget"
+        },
+        "observedGeneration": {
+            "type": [
+                "integer"
+            ],
+            "description": "Most recent generation observed when updating this PDB status. PodDisruptionsAllowed and other status informatio is valid only if observedGeneration equals to PDB's object generation."
+        }
+    }
+}

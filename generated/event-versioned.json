@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/event-versioned.json",
+    "name": "event-versioned",
+    "description": "Event represents a single event to a watched resource.",
+    "type": "object",
+    "properties": {
+        "object": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/rawextension-runtime.json"
+        },
+        "type": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/gitrepovolumesource-v1.json",
+    "name": "gitrepovolumesource-v1",
+    "description": "Represents a volume that is populated with the contents of a git repository. Git repo volumes do not support ownership management. Git repo volumes support SELinux relabeling.",
+    "type": "object",
+    "properties": {
+        "directory": {
+            "type": [
+                "string"
+            ],
+            "description": "Target directory name. Must not contain or start with '..'.  If '.' is supplied, the volume directory will be the git repository.  Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name."
+        },
+        "repository": {
+            "type": [
+                "string"
+            ],
+            "description": "Repository URL"
+        },
+        "revision": {
+            "type": [
+                "string"
+            ],
+            "description": "Commit hash for the specified revision."
+        }
+    }
+}

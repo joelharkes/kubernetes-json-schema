@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/deploymentstrategy-v1beta1.json",
+    "name": "deploymentstrategy-v1beta1",
+    "description": "Job represents the configuration of a single job.",
+    "type": "object",
+    "properties": {
+        "rollingUpdate": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/rollingupdatedeployment-v1beta1.json"
+        },
+        "type": {
+            "type": [
+                "string"
+            ],
+            "description": "Type of deployment. Can be \"Recreate\" or \"RollingUpdate\". Default is RollingUpdate."
+        }
+    }
+}

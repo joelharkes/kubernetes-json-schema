@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/patch-unversioned.json",
+    "name": "patch-unversioned",
+    "description": "Patch is provided to give a concrete name and type to the Kubernetes PATCH request body.",
+    "type": "object",
+    "properties": {}
+}

@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/pod-v1.json",
+    "name": "pod-v1",
+    "description": "Pod is a collection of containers that can run on a host. This resource is created by clients and scheduled onto hosts.",
+    "type": "object",
+    "properties": {
+        "apiVersion": {
+            "type": [
+                "string"
+            ],
+            "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources"
+        },
+        "kind": {
+            "type": [
+                "string"
+            ],
+            "description": "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds"
+        },
+        "metadata": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/objectmeta-v1.json"
+        },
+        "spec": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/podspec-v1.json"
+        },
+        "status": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/podstatus-v1.json"
+        }
+    }
+}

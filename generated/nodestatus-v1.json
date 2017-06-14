@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nodestatus-v1.json",
+    "name": "nodestatus-v1",
+    "description": "PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous to a node. More info: http://kubernetes.io/docs/user-guide/persistent-volumes",
+    "type": "object",
+    "properties": {
+        "addresses": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nodeaddress-v1.json"
+            }
+        },
+        "allocatable": {
+            "type": [
+                "object"
+            ],
+            "description": "Allocatable represents the resources of a node that are available for scheduling. Defaults to Capacity."
+        },
+        "capacity": {
+            "type": [
+                "object"
+            ],
+            "description": "Capacity represents the total resources of a node. More info: http://kubernetes.io/docs/user-guide/persistent-volumes#capacity for more details."
+        },
+        "conditions": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nodecondition-v1.json"
+            }
+        },
+        "daemonEndpoints": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nodedaemonendpoints-v1.json"
+        },
+        "images": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerimage-v1.json"
+            }
+        },
+        "nodeInfo": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nodesysteminfo-v1.json"
+        },
+        "phase": {
+            "type": [
+                "string"
+            ],
+            "description": "NodePhase is the recently observed lifecycle phase of the node. More info: http://releases.k8s.io/HEAD/docs/admin/node.md#node-phase The field is never populated, and now is deprecated."
+        },
+        "volumesAttached": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/attachedvolume-v1.json"
+            }
+        },
+        "volumesInUse": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "List of attachable volumes in use (mounted) by the node."
+        }
+    }
+}

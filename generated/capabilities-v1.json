@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/capabilities-v1.json",
+    "name": "capabilities-v1",
+    "description": "Adds and removes POSIX capabilities from running containers.",
+    "type": "object",
+    "properties": {
+        "add": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "Added capabilities"
+        },
+        "drop": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "Removed capabilities"
+        }
+    }
+}

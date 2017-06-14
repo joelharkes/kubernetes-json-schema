@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/tokenreviewstatus-v1beta1.json",
+    "name": "tokenreviewstatus-v1beta1",
+    "description": "This section contains definitions for objects used in the Kubernetes APIs.",
+    "type": "object",
+    "properties": {
+        "authenticated": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Authenticated indicates that the token was associated with a known user."
+        },
+        "error": {
+            "type": [
+                "string"
+            ],
+            "description": "Error indicates that the token couldn't be checked"
+        },
+        "user": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/userinfo-v1beta1.json"
+        }
+    }
+}

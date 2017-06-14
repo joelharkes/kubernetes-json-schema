@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/intorstring-intstr.json",
+    "name": "intorstring-intstr",
+    "description": "JobCondition describes current state of a job.",
+    "type": "object",
+    "properties": {}
+}

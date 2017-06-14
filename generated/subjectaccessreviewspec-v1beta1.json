@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/subjectaccessreviewspec-v1beta1.json",
+    "name": "subjectaccessreviewspec-v1beta1",
+    "description": "TokenReview attempts to authenticate a token to a known user. Note: TokenReview requests may be cached by the webhook token authenticator plugin in the kube-apiserver.",
+    "type": "object",
+    "properties": {
+        "extra": {
+            "type": [
+                "object"
+            ],
+            "description": "Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is input to the authorizer it needs a reflection here."
+        },
+        "group": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "Groups is the groups you're testing for."
+        },
+        "nonResourceAttributes": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nonresourceattributes-v1beta1.json"
+        },
+        "resourceAttributes": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/resourceattributes-v1beta1.json"
+        },
+        "user": {
+            "type": [
+                "string"
+            ],
+            "description": "User is the user you're testing for. If you specify \"User\" but not \"Group\", then is it interpreted as \"What if User were not a member of any groups"
+        }
+    }
+}

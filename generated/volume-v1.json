@@ -1,0 +1,84 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/volume-v1.json",
+    "name": "volume-v1",
+    "description": "Volume represents a named volume in a pod that may be accessed by any container in the pod.",
+    "type": "object",
+    "properties": {
+        "awsElasticBlockStore": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/awselasticblockstorevolumesource-v1.json"
+        },
+        "azureDisk": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/azurediskvolumesource-v1.json"
+        },
+        "azureFile": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/azurefilevolumesource-v1.json"
+        },
+        "cephfs": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/cephfsvolumesource-v1.json"
+        },
+        "cinder": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/cindervolumesource-v1.json"
+        },
+        "configMap": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/configmapvolumesource-v1.json"
+        },
+        "downwardAPI": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/downwardapivolumesource-v1.json"
+        },
+        "emptyDir": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/emptydirvolumesource-v1.json"
+        },
+        "fc": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/fcvolumesource-v1.json"
+        },
+        "flexVolume": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/flexvolumesource-v1.json"
+        },
+        "flocker": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/flockervolumesource-v1.json"
+        },
+        "gcePersistentDisk": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/gcepersistentdiskvolumesource-v1.json"
+        },
+        "gitRepo": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/gitrepovolumesource-v1.json"
+        },
+        "glusterfs": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/glusterfsvolumesource-v1.json"
+        },
+        "hostPath": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/hostpathvolumesource-v1.json"
+        },
+        "iscsi": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/iscsivolumesource-v1.json"
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "Volume's name. Must be a DNS_LABEL and unique within the pod. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
+        },
+        "nfs": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nfsvolumesource-v1.json"
+        },
+        "persistentVolumeClaim": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/persistentvolumeclaimvolumesource-v1.json"
+        },
+        "photonPersistentDisk": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/photonpersistentdiskvolumesource-v1.json"
+        },
+        "quobyte": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/quobytevolumesource-v1.json"
+        },
+        "rbd": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/rbdvolumesource-v1.json"
+        },
+        "secret": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/secretvolumesource-v1.json"
+        },
+        "vsphereVolume": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/vspherevirtualdiskvolumesource-v1.json"
+        }
+    }
+}

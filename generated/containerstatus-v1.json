@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstatus-v1.json",
+    "name": "containerstatus-v1",
+    "description": "CronJob represents the configuration of a single cron job.",
+    "type": "object",
+    "properties": {
+        "containerID": {
+            "type": [
+                "string"
+            ],
+            "description": "Container's ID in the format 'docker://'. More info: http://kubernetes.io/docs/user-guide/container-environment#container-information"
+        },
+        "image": {
+            "type": [
+                "string"
+            ],
+            "description": "The image the container is running. More info: http://kubernetes.io/docs/user-guide/images"
+        },
+        "imageID": {
+            "type": [
+                "string"
+            ],
+            "description": "ImageID of the container's image."
+        },
+        "lastState": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstate-v1.json"
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be updated."
+        },
+        "ready": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Specifies whether the container has passed its readiness probe."
+        },
+        "restartCount": {
+            "type": [
+                "integer"
+            ],
+            "description": "The number of times the container has been restarted, currently based on the number of dead containers that have not yet been removed. Note that this is calculated from dead containers. But those containers are subject to garbage collection. This value will get capped at 5 by GC."
+        },
+        "state": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstate-v1.json"
+        }
+    }
+}

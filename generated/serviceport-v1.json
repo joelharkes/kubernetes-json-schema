@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/serviceport-v1.json",
+    "name": "serviceport-v1",
+    "description": "ServicePort contains information on service's port.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "The name of this port within the service. This must be a DNS_LABEL. All ports within a ServiceSpec must have unique names. This maps to the 'Name' field in EndpointPort objects. Optional if only one ServicePort is defined on this service."
+        },
+        "nodePort": {
+            "type": [
+                "integer"
+            ],
+            "description": "The port on each node on which this service is exposed when type=NodePort or LoadBalancer. Usually assigned by the system. If specified, it will be allocated to the service if unused or else creation of the service will fail. Default is to auto-allocate a port if the ServiceType of this Service requires one. More info: http://kubernetes.io/docs/user-guide/services#type--nodeport"
+        },
+        "port": {
+            "type": [
+                "integer"
+            ],
+            "description": "The port that will be exposed by this service."
+        },
+        "protocol": {
+            "type": [
+                "string"
+            ],
+            "description": "The IP protocol for this port. Supports \"TCP\" and \"UDP\". Default is TCP."
+        },
+        "targetPort": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/intorstring-intstr.json"
+        }
+    }
+}

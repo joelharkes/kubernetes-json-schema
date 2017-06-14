@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/podtemplatespec-v1.json",
+    "name": "podtemplatespec-v1",
+    "description": "PodDisruptionBudget is an object to define the max disruption that can be caused to a collection of pods",
+    "type": "object",
+    "properties": {
+        "metadata": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/objectmeta-v1.json"
+        },
+        "spec": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/podspec-v1.json"
+        }
+    }
+}

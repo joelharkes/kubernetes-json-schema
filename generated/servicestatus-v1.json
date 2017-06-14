@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/servicestatus-v1.json",
+    "name": "servicestatus-v1",
+    "description": "Config and Storage resources are responsible for injecting data into your applications and persisting data externally to your container.",
+    "type": "object",
+    "properties": {
+        "loadBalancer": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/loadbalancerstatus-v1.json"
+        }
+    }
+}

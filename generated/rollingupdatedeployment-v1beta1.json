@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/rollingupdatedeployment-v1beta1.json",
+    "name": "rollingupdatedeployment-v1beta1",
+    "description": "Job represents the configuration of a single job.",
+    "type": "object",
+    "properties": {
+        "maxSurge": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/intorstring-intstr.json"
+        },
+        "maxUnavailable": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/intorstring-intstr.json"
+        }
+    }
+}

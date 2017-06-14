@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/daemonendpoint-v1.json",
+    "name": "daemonendpoint-v1",
+    "description": "DaemonEndpoint contains information about a single Daemon endpoint.",
+    "type": "object",
+    "properties": {
+        "Port": {
+            "type": [
+                "integer"
+            ],
+            "description": "Port number of the given endpoint."
+        }
+    }
+}

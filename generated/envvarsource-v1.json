@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/envvarsource-v1.json",
+    "name": "envvarsource-v1",
+    "description": "EnvVarSource represents a source for the value of an EnvVar.",
+    "type": "object",
+    "properties": {
+        "configMapKeyRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/configmapkeyselector-v1.json"
+        },
+        "fieldRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/objectfieldselector-v1.json"
+        },
+        "resourceFieldRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/resourcefieldselector-v1.json"
+        },
+        "secretKeyRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/secretkeyselector-v1.json"
+        }
+    }
+}

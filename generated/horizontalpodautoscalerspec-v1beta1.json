@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/horizontalpodautoscalerspec-v1beta1.json",
+    "name": "horizontalpodautoscalerspec-v1beta1",
+    "description": "Job represents the configuration of a single job. DEPRECATED: extensions/v1beta1.Job is deprecated, use batch/v1.Job instead.",
+    "type": "object",
+    "properties": {
+        "cpuUtilization": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/cputargetutilization-v1beta1.json"
+        },
+        "maxReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "upper limit for the number of pods that can be set by the autoscaler; cannot be smaller than MinReplicas."
+        },
+        "minReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "lower limit for the number of pods that can be set by the autoscaler, default 1."
+        },
+        "scaleRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/subresourcereference-v1beta1.json"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/poddisruptionbudgetspec-v1beta1.json",
+    "name": "poddisruptionbudgetspec-v1beta1",
+    "description": "A ThirdPartyResource is a generic representation of a resource, it is used by add-ons and plugins to add new resource types to the API.  It consists of one or more Versions of the api.",
+    "type": "object",
+    "properties": {
+        "minAvailable": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/intorstring-intstr.json"
+        },
+        "selector": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/labelselector-unversioned.json"
+        }
+    }
+}

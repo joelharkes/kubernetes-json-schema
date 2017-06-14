@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/rolebindinglist-v1alpha1.json",
+    "name": "rolebindinglist-v1alpha1",
+    "description": "SelfSubjectAccessReview checks whether or the current user can perform an action.  Not filling in a spec.namespace means \"in all namespaces\".  Self is a special case, because users should always be able to check whether they can perform an action",
+    "type": "object",
+    "properties": {
+        "apiVersion": {
+            "type": [
+                "string"
+            ],
+            "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources"
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/rolebinding-v1alpha1.json"
+            }
+        },
+        "kind": {
+            "type": [
+                "string"
+            ],
+            "description": "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds"
+        },
+        "metadata": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/listmeta-unversioned.json"
+        }
+    }
+}

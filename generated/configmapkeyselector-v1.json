@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/configmapkeyselector-v1.json",
+    "name": "configmapkeyselector-v1",
+    "description": "Selects a key from a ConfigMap.",
+    "type": "object",
+    "properties": {
+        "key": {
+            "type": [
+                "string"
+            ],
+            "description": "The key to select."
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
+        }
+    }
+}

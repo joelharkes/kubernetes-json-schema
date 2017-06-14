@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/volumemount-v1.json",
+    "name": "volumemount-v1",
+    "description": "VolumeMount describes a mounting of a Volume within a container.",
+    "type": "object",
+    "properties": {
+        "mountPath": {
+            "type": [
+                "string"
+            ],
+            "description": "Path within the container at which the volume should be mounted.  Must not contain ':'."
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "This must match the Name of a Volume."
+        },
+        "readOnly": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false."
+        },
+        "subPath": {
+            "type": [
+                "string"
+            ],
+            "description": "Path within the volume from which the container's volume should be mounted. Defaults to \"\" (volume's root)."
+        }
+    }
+}

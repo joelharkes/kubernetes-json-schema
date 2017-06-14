@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/jobcondition-v1beta1.json",
+    "name": "jobcondition-v1beta1",
+    "description": "JobCondition describes current state of a job.",
+    "type": "object",
+    "properties": {
+        "lastProbeTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "lastTransitionTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "message": {
+            "type": [
+                "string"
+            ],
+            "description": "Human readable message indicating details about last transition."
+        },
+        "reason": {
+            "type": [
+                "string"
+            ],
+            "description": "(brief) reason for the condition's last transition."
+        },
+        "status": {
+            "type": [
+                "string"
+            ],
+            "description": "Status of the condition, one of True, False, Unknown."
+        },
+        "type": {
+            "type": [
+                "string"
+            ],
+            "description": "Type of job condition, Complete or Failed."
+        }
+    }
+}

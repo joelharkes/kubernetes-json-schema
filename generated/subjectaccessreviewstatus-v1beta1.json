@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/subjectaccessreviewstatus-v1beta1.json",
+    "name": "subjectaccessreviewstatus-v1beta1",
+    "description": "TokenReview attempts to authenticate a token to a known user. Note: TokenReview requests may be cached by the webhook token authenticator plugin in the kube-apiserver.",
+    "type": "object",
+    "properties": {
+        "allowed": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Allowed is required.  True if the action would be allowed, false otherwise."
+        },
+        "evaluationError": {
+            "type": [
+                "string"
+            ],
+            "description": "EvaluationError is an indication that some error occurred during the authorization check. It is entirely possible to get an error and be able to continue determine authorization status in spite of it. For instance, RBAC can be missing a role, but enough roles are still present and bound to reason about the request."
+        },
+        "reason": {
+            "type": [
+                "string"
+            ],
+            "description": "Reason is optional.  It indicates why a request was allowed or denied."
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/networkpolicypeer-v1beta1.json",
+    "name": "networkpolicypeer-v1beta1",
+    "description": "NodeAddress contains information for the node's address.",
+    "type": "object",
+    "properties": {
+        "namespaceSelector": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/labelselector-unversioned.json"
+        },
+        "podSelector": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/labelselector-unversioned.json"
+        }
+    }
+}

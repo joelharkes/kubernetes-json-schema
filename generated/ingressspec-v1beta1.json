@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/ingressspec-v1beta1.json",
+    "name": "ingressspec-v1beta1",
+    "description": "Service is a named abstraction of software service (for example, mysql) consisting of local port (for example 3306) that the proxy listens on, and the selector that determines which pods will answer requests sent through the proxy.",
+    "type": "object",
+    "properties": {
+        "backend": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/ingressbackend-v1beta1.json"
+        },
+        "rules": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/ingressrule-v1beta1.json"
+            }
+        },
+        "tls": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/ingresstls-v1beta1.json"
+            }
+        }
+    }
+}

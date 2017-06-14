@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/certificatesigningrequestspec-v1alpha1.json",
+    "name": "certificatesigningrequestspec-v1alpha1",
+    "description": "ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.",
+    "type": "object",
+    "properties": {
+        "groups": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": ""
+        },
+        "request": {
+            "type": [
+                "string"
+            ],
+            "description": "Base64-encoded PKCS#10 CSR data"
+        },
+        "uid": {
+            "type": [
+                "string"
+            ],
+            "description": ""
+        },
+        "username": {
+            "type": [
+                "string"
+            ],
+            "description": "Information about the requesting user (if relevant) See user.Info interface for details"
+        }
+    }
+}

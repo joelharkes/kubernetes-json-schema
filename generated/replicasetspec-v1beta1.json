@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/replicasetspec-v1beta1.json",
+    "name": "replicasetspec-v1beta1",
+    "description": "ReplicationController represents the configuration of a replication controller.",
+    "type": "object",
+    "properties": {
+        "minReadySeconds": {
+            "type": [
+                "integer"
+            ],
+            "description": "Minimum number of seconds for which a newly created pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready)"
+        },
+        "replicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "Replicas is the number of desired replicas. This is a pointer to distinguish between explicit zero and unspecified. Defaults to 1. More info: http://kubernetes.io/docs/user-guide/replication-controller#what-is-a-replication-controller"
+        },
+        "selector": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/labelselector-unversioned.json"
+        },
+        "template": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/podtemplatespec-v1.json"
+        }
+    }
+}

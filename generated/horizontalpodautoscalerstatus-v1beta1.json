@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/horizontalpodautoscalerstatus-v1beta1.json",
+    "name": "horizontalpodautoscalerstatus-v1beta1",
+    "description": "Job represents the configuration of a single job. DEPRECATED: extensions/v1beta1.Job is deprecated, use batch/v1.Job instead.",
+    "type": "object",
+    "properties": {
+        "currentCPUUtilizationPercentage": {
+            "type": [
+                "integer"
+            ],
+            "description": "current average CPU utilization over all pods, represented as a percentage of requested CPU, e.g. 70 means that an average pod is using now 70% of its requested CPU."
+        },
+        "currentReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "current number of replicas of pods managed by this autoscaler."
+        },
+        "desiredReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "desired number of replicas of pods managed by this autoscaler."
+        },
+        "lastScaleTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "observedGeneration": {
+            "type": [
+                "integer"
+            ],
+            "description": "most recent generation observed by this autoscaler."
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/azurefilevolumesource-v1.json",
+    "name": "azurefilevolumesource-v1",
+    "description": "AzureFile represents an Azure File Service mount on the host and bind mount to the pod.",
+    "type": "object",
+    "properties": {
+        "readOnly": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
+        },
+        "secretName": {
+            "type": [
+                "string"
+            ],
+            "description": "the name of secret that contains Azure Storage Account Name and Key"
+        },
+        "shareName": {
+            "type": [
+                "string"
+            ],
+            "description": "Share Name"
+        }
+    }
+}

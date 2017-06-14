@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/tcpsocketaction-v1.json",
+    "name": "tcpsocketaction-v1",
+    "description": "TCPSocketAction describes an action based on opening a socket",
+    "type": "object",
+    "properties": {
+        "port": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/intorstring-intstr.json"
+        }
+    }
+}

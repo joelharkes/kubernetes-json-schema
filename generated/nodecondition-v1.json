@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nodecondition-v1.json",
+    "name": "nodecondition-v1",
+    "description": "NodeCondition contains condition information for a node.",
+    "type": "object",
+    "properties": {
+        "lastHeartbeatTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "lastTransitionTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "message": {
+            "type": [
+                "string"
+            ],
+            "description": "Human readable message indicating details about last transition."
+        },
+        "reason": {
+            "type": [
+                "string"
+            ],
+            "description": "(brief) reason for the condition's last transition."
+        },
+        "status": {
+            "type": [
+                "string"
+            ],
+            "description": "Status of the condition, one of True, False, Unknown."
+        },
+        "type": {
+            "type": [
+                "string"
+            ],
+            "description": "Type of node condition."
+        }
+    }
+}

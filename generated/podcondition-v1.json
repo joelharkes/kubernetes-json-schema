@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/podcondition-v1.json",
+    "name": "podcondition-v1",
+    "description": "PodCondition contains details for the current condition of this pod.",
+    "type": "object",
+    "properties": {
+        "lastProbeTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "lastTransitionTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "message": {
+            "type": [
+                "string"
+            ],
+            "description": "Human-readable message indicating details about last transition."
+        },
+        "reason": {
+            "type": [
+                "string"
+            ],
+            "description": "Unique, one-word, CamelCase reason for the condition's last transition."
+        },
+        "status": {
+            "type": [
+                "string"
+            ],
+            "description": "Status is the status of the condition. Can be True, False, Unknown. More info: http://kubernetes.io/docs/user-guide/pod-states#pod-conditions"
+        },
+        "type": {
+            "type": [
+                "string"
+            ],
+            "description": "Type is the type of the condition. Currently only Ready. More info: http://kubernetes.io/docs/user-guide/pod-states#pod-conditions"
+        }
+    }
+}

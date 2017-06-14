@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstaterunning-v1.json",
+    "name": "containerstaterunning-v1",
+    "description": "ContainerStateRunning is a running state of a container.",
+    "type": "object",
+    "properties": {
+        "startedAt": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        }
+    }
+}

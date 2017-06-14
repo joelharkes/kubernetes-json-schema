@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/resourcefieldselector-v1.json",
+    "name": "resourcefieldselector-v1",
+    "description": "ResourceFieldSelector represents container resources (cpu, memory) and their output format",
+    "type": "object",
+    "properties": {
+        "containerName": {
+            "type": [
+                "string"
+            ],
+            "description": "Container name: required for volumes, optional for env vars"
+        },
+        "divisor": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/quantity-resource.json"
+        },
+        "resource": {
+            "type": [
+                "string"
+            ],
+            "description": "Required: resource to select"
+        }
+    }
+}

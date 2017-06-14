@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/roleref-v1alpha1.json",
+    "name": "roleref-v1alpha1",
+    "description": "RoleRef contains information that points to the role being used",
+    "type": "object",
+    "properties": {
+        "apiGroup": {
+            "type": [
+                "string"
+            ],
+            "description": "APIGroup is the group for the resource being referenced"
+        },
+        "kind": {
+            "type": [
+                "string"
+            ],
+            "description": "Kind is the type of resource being referenced"
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "Name is the name of resource being referenced"
+        }
+    }
+}

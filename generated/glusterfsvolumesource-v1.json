@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/glusterfsvolumesource-v1.json",
+    "name": "glusterfsvolumesource-v1",
+    "description": "Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling.",
+    "type": "object",
+    "properties": {
+        "endpoints": {
+            "type": [
+                "string"
+            ],
+            "description": "EndpointsName is the endpoint name that details Glusterfs topology. More info: http://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod"
+        },
+        "path": {
+            "type": [
+                "string"
+            ],
+            "description": "Path is the Glusterfs volume path. More info: http://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod"
+        },
+        "readOnly": {
+            "type": [
+                "boolean"
+            ],
+            "description": "ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: http://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod"
+        }
+    }
+}

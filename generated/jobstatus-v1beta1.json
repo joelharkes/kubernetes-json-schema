@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/jobstatus-v1beta1.json",
+    "name": "jobstatus-v1beta1",
+    "description": "Job represents the configuration of a single job.",
+    "type": "object",
+    "properties": {
+        "active": {
+            "type": [
+                "integer"
+            ],
+            "description": "Active is the number of actively running pods."
+        },
+        "completionTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "conditions": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/jobcondition-v1beta1.json"
+            }
+        },
+        "failed": {
+            "type": [
+                "integer"
+            ],
+            "description": "Failed is the number of pods which reached Phase Failed."
+        },
+        "startTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "succeeded": {
+            "type": [
+                "integer"
+            ],
+            "description": "Succeeded is the number of pods which reached Phase Succeeded."
+        }
+    }
+}

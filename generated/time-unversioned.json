@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json",
+    "name": "time-unversioned",
+    "description": "UserInfo holds the information about the user needed to implement the user.Info interface.",
+    "type": "object",
+    "properties": {}
+}

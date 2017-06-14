@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/vspherevirtualdiskvolumesource-v1.json",
+    "name": "vspherevirtualdiskvolumesource-v1",
+    "description": "Represents a vSphere volume resource.",
+    "type": "object",
+    "properties": {
+        "fsType": {
+            "type": [
+                "string"
+            ],
+            "description": "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified."
+        },
+        "volumePath": {
+            "type": [
+                "string"
+            ],
+            "description": "Path that identifies vSphere volume vmdk"
+        }
+    }
+}

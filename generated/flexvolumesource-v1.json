@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/flexvolumesource-v1.json",
+    "name": "flexvolumesource-v1",
+    "description": "FlexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin. This is an alpha feature and may change in future.",
+    "type": "object",
+    "properties": {
+        "driver": {
+            "type": [
+                "string"
+            ],
+            "description": "Driver is the name of the driver to use for this volume."
+        },
+        "fsType": {
+            "type": [
+                "string"
+            ],
+            "description": "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". The default filesystem depends on FlexVolume script."
+        },
+        "options": {
+            "type": [
+                "object"
+            ],
+            "description": "Optional: Extra command options if any."
+        },
+        "readOnly": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts."
+        },
+        "secretRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/localobjectreference-v1.json"
+        }
+    }
+}

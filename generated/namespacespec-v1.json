@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/namespacespec-v1.json",
+    "name": "namespacespec-v1",
+    "description": "Node is a worker node in Kubernetes. Each node will have a unique identifier in the cache (i.e. in etcd).",
+    "type": "object",
+    "properties": {
+        "finalizers": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "Finalizers is an opaque list of values that must be empty to permanently remove object from storage. More info: http://releases.k8s.io/HEAD/docs/design/namespaces.md#finalizers"
+        }
+    }
+}

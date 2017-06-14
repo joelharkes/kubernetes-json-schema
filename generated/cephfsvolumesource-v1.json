@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/cephfsvolumesource-v1.json",
+    "name": "cephfsvolumesource-v1",
+    "description": "Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.",
+    "type": "object",
+    "properties": {
+        "monitors": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "Required: Monitors is a collection of Ceph monitors More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it"
+        },
+        "path": {
+            "type": [
+                "string"
+            ],
+            "description": "Optional: Used as the mounted root, rather than the full Ceph tree, default is /"
+        },
+        "readOnly": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it"
+        },
+        "secretFile": {
+            "type": [
+                "string"
+            ],
+            "description": "Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it"
+        },
+        "secretRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/localobjectreference-v1.json"
+        },
+        "user": {
+            "type": [
+                "string"
+            ],
+            "description": "Optional: User is the rados user name, default is admin More info: http://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it"
+        }
+    }
+}

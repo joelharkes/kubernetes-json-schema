@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/persistentvolumespec-v1.json",
+    "name": "persistentvolumespec-v1",
+    "description": "ResourceQuota sets aggregate quota restrictions enforced per namespace",
+    "type": "object",
+    "properties": {
+        "accessModes": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "AccessModes contains all ways the volume can be mounted. More info: http://kubernetes.io/docs/user-guide/persistent-volumes#access-modes"
+        },
+        "awsElasticBlockStore": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/awselasticblockstorevolumesource-v1.json"
+        },
+        "azureDisk": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/azurediskvolumesource-v1.json"
+        },
+        "azureFile": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/azurefilevolumesource-v1.json"
+        },
+        "capacity": {
+            "type": [
+                "object"
+            ],
+            "description": "A description of the persistent volume's resources and capacity. More info: http://kubernetes.io/docs/user-guide/persistent-volumes#capacity"
+        },
+        "cephfs": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/cephfsvolumesource-v1.json"
+        },
+        "cinder": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/cindervolumesource-v1.json"
+        },
+        "claimRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/objectreference-v1.json"
+        },
+        "fc": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/fcvolumesource-v1.json"
+        },
+        "flexVolume": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/flexvolumesource-v1.json"
+        },
+        "flocker": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/flockervolumesource-v1.json"
+        },
+        "gcePersistentDisk": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/gcepersistentdiskvolumesource-v1.json"
+        },
+        "glusterfs": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/glusterfsvolumesource-v1.json"
+        },
+        "hostPath": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/hostpathvolumesource-v1.json"
+        },
+        "iscsi": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/iscsivolumesource-v1.json"
+        },
+        "nfs": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nfsvolumesource-v1.json"
+        },
+        "persistentVolumeReclaimPolicy": {
+            "type": [
+                "string"
+            ],
+            "description": "What happens to a persistent volume when released from its claim. Valid options are Retain (default) and Recycle. Recycling must be supported by the volume plugin underlying this persistent volume. More info: http://kubernetes.io/docs/user-guide/persistent-volumes#recycling-policy"
+        },
+        "photonPersistentDisk": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/photonpersistentdiskvolumesource-v1.json"
+        },
+        "quobyte": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/quobytevolumesource-v1.json"
+        },
+        "rbd": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/rbdvolumesource-v1.json"
+        },
+        "vsphereVolume": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/vspherevirtualdiskvolumesource-v1.json"
+        }
+    }
+}

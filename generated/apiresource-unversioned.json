@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/apiresource-unversioned.json",
+    "name": "apiresource-unversioned",
+    "description": "APIResource specifies the name of a resource and whether it is namespaced.",
+    "type": "object",
+    "properties": {
+        "kind": {
+            "type": [
+                "string"
+            ],
+            "description": "kind is the kind for the resource (e.g. 'Foo' is the kind for a resource 'foo')"
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "name is the name of the resource."
+        },
+        "namespaced": {
+            "type": [
+                "boolean"
+            ],
+            "description": "namespaced indicates if a resource is namespaced or not."
+        }
+    }
+}

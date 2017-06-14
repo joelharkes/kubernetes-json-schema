@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/tokenreviewspec-v1beta1.json",
+    "name": "tokenreviewspec-v1beta1",
+    "description": "This section contains definitions for objects used in the Kubernetes APIs.",
+    "type": "object",
+    "properties": {
+        "token": {
+            "type": [
+                "string"
+            ],
+            "description": "Token is the opaque bearer token."
+        }
+    }
+}

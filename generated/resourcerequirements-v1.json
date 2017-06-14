@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/resourcerequirements-v1.json",
+    "name": "resourcerequirements-v1",
+    "description": "ResourceRequirements describes the compute resource requirements.",
+    "type": "object",
+    "properties": {
+        "limits": {
+            "type": [
+                "object"
+            ],
+            "description": "Limits describes the maximum amount of compute resources allowed. More info: http://kubernetes.io/docs/user-guide/compute-resources/"
+        },
+        "requests": {
+            "type": [
+                "object"
+            ],
+            "description": "Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: http://kubernetes.io/docs/user-guide/compute-resources/"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/limitrangespec-v1.json",
+    "name": "limitrangespec-v1",
+    "description": "configuration of a horizontal pod autoscaler.",
+    "type": "object",
+    "properties": {
+        "limits": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/limitrangeitem-v1.json"
+            }
+        }
+    }
+}

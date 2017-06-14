@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/horizontalpodautoscalerspec-v1.json",
+    "name": "horizontalpodautoscalerspec-v1",
+    "description": "PodTemplate describes a template for creating copies of a predefined pod.",
+    "type": "object",
+    "properties": {
+        "maxReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "upper limit for the number of pods that can be set by the autoscaler; cannot be smaller than MinReplicas."
+        },
+        "minReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "lower limit for the number of pods that can be set by the autoscaler, default 1."
+        },
+        "scaleTargetRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/crossversionobjectreference-v1.json"
+        },
+        "targetCPUUtilizationPercentage": {
+            "type": [
+                "integer"
+            ],
+            "description": "target average CPU utilization (represented as a percentage of requested CPU) over all the pods; if not specified the default autoscaling policy will be used."
+        }
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/container-v1.json",
+    "name": "container-v1",
+    "description": "A single application container that you want to run within a pod.",
+    "type": "object",
+    "properties": {
+        "args": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/containers#containers-and-commands"
+        },
+        "command": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/containers#containers-and-commands"
+        },
+        "env": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/envvar-v1.json"
+            }
+        },
+        "image": {
+            "type": [
+                "string"
+            ],
+            "description": "Docker image name. More info: http://kubernetes.io/docs/user-guide/images"
+        },
+        "imagePullPolicy": {
+            "type": [
+                "string"
+            ],
+            "description": "Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/images#updating-images"
+        },
+        "lifecycle": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/lifecycle-v1.json"
+        },
+        "livenessProbe": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/probe-v1.json"
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated."
+        },
+        "ports": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerport-v1.json"
+            }
+        },
+        "readinessProbe": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/probe-v1.json"
+        },
+        "resources": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/resourcerequirements-v1.json"
+        },
+        "securityContext": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/securitycontext-v1.json"
+        },
+        "stdin": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Whether this container should allocate a buffer for stdin in the container runtime. If this is not set, reads from stdin in the container will always result in EOF. Default is false."
+        },
+        "stdinOnce": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Whether the container runtime should close the stdin channel after it has been opened by a single attach. When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF. Default is false"
+        },
+        "terminationMessagePath": {
+            "type": [
+                "string"
+            ],
+            "description": "Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Defaults to /dev/termination-log. Cannot be updated."
+        },
+        "tty": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Whether this container should allocate a TTY for itself, also requires 'stdin' to be true. Default is false."
+        },
+        "volumeMounts": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/volumemount-v1.json"
+            }
+        },
+        "workingDir": {
+            "type": [
+                "string"
+            ],
+            "description": "Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated."
+        }
+    }
+}

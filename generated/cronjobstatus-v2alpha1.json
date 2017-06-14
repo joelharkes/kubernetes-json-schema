@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/cronjobstatus-v2alpha1.json",
+    "name": "cronjobstatus-v2alpha1",
+    "description": "DaemonSet represents the configuration of a daemon set.",
+    "type": "object",
+    "properties": {
+        "active": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/objectreference-v1.json"
+            }
+        },
+        "lastScheduleTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        }
+    }
+}

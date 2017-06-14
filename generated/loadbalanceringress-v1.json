@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/loadbalanceringress-v1.json",
+    "name": "loadbalanceringress-v1",
+    "description": "LoadBalancerIngress represents the status of a load-balancer ingress point: traffic intended for the service should be sent to an ingress point.",
+    "type": "object",
+    "properties": {
+        "hostname": {
+            "type": [
+                "string"
+            ],
+            "description": "Hostname is set for load-balancer ingress points that are DNS based (typically AWS load-balancers)"
+        },
+        "ip": {
+            "type": [
+                "string"
+            ],
+            "description": "IP is set for load-balancer ingress points that are IP based (typically GCE or OpenStack load-balancers)"
+        }
+    }
+}

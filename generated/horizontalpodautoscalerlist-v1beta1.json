@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/horizontalpodautoscalerlist-v1beta1.json",
+    "name": "horizontalpodautoscalerlist-v1beta1",
+    "description": "Job represents the configuration of a single job. DEPRECATED: extensions/v1beta1.Job is deprecated, use batch/v1.Job instead.",
+    "type": "object",
+    "properties": {
+        "apiVersion": {
+            "type": [
+                "string"
+            ],
+            "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#resources"
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/horizontalpodautoscaler-v1beta1.json"
+            }
+        },
+        "kind": {
+            "type": [
+                "string"
+            ],
+            "description": "Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds"
+        },
+        "metadata": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/listmeta-unversioned.json"
+        }
+    }
+}

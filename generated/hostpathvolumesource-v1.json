@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/hostpathvolumesource-v1.json",
+    "name": "hostpathvolumesource-v1",
+    "description": "Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling.",
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": [
+                "string"
+            ],
+            "description": "Path of the directory on the host. More info: http://kubernetes.io/docs/user-guide/volumes#hostpath"
+        }
+    }
+}

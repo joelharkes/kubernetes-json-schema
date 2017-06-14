@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/jobspec-v1beta1.json",
+    "name": "jobspec-v1beta1",
+    "description": "Job represents the configuration of a single job.",
+    "type": "object",
+    "properties": {
+        "activeDeadlineSeconds": {
+            "type": [
+                "integer"
+            ],
+            "description": "Optional duration in seconds relative to the startTime that the job may be active before the system tries to terminate it; value must be positive integer"
+        },
+        "autoSelector": {
+            "type": [
+                "boolean"
+            ],
+            "description": "AutoSelector controls generation of pod labels and pod selectors. It was not present in the original extensions/v1beta1 Job definition, but exists to allow conversion from batch/v1 Jobs, where it corresponds to, but has the opposite meaning as, ManualSelector. More info: http://releases.k8s.io/HEAD/docs/design/selector-generation.md"
+        },
+        "completions": {
+            "type": [
+                "integer"
+            ],
+            "description": "Completions specifies the desired number of successfully finished pods the job should be run with.  Setting to nil means that the success of any pod signals the success of all pods, and allows parallelism to have any positive value.  Setting to 1 means that parallelism is limited to 1 and the success of that pod signals the success of the job. More info: http://kubernetes.io/docs/user-guide/jobs"
+        },
+        "parallelism": {
+            "type": [
+                "integer"
+            ],
+            "description": "Parallelism specifies the maximum desired number of pods the job should run at any given time. The actual number of pods running in steady state will be less than this number when ((.spec.completions - .status.successful) < .spec.parallelism), i.e. when the work left to do is less than max parallelism. More info: http://kubernetes.io/docs/user-guide/jobs"
+        },
+        "selector": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/labelselector-unversioned.json"
+        },
+        "template": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/podtemplatespec-v1.json"
+        }
+    }
+}

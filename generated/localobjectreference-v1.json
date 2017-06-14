@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/localobjectreference-v1.json",
+    "name": "localobjectreference-v1",
+    "description": "LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "Name of the referent. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
+        }
+    }
+}

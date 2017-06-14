@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/networkpolicyingressrule-v1beta1.json",
+    "name": "networkpolicyingressrule-v1beta1",
+    "description": "This NetworkPolicyIngressRule matches traffic if and only if the traffic matches both ports AND from.",
+    "type": "object",
+    "properties": {
+        "from": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/networkpolicypeer-v1beta1.json"
+            }
+        },
+        "ports": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/networkpolicyport-v1beta1.json"
+            }
+        }
+    }
+}

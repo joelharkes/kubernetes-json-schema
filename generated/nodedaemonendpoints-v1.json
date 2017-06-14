@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nodedaemonendpoints-v1.json",
+    "name": "nodedaemonendpoints-v1",
+    "description": "NodeDaemonEndpoints lists ports opened by daemons running on the Node.",
+    "type": "object",
+    "properties": {
+        "kubeletEndpoint": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/daemonendpoint-v1.json"
+        }
+    }
+}

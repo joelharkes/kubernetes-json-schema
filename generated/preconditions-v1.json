@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/preconditions-v1.json",
+    "name": "preconditions-v1",
+    "description": "Preconditions must be fulfilled before an operation (update, delete, etc.) is carried out.",
+    "type": "object",
+    "properties": {
+        "uid": {
+            "type": [
+                "string"
+            ],
+            "description": "Specifies the target UID."
+        }
+    }
+}

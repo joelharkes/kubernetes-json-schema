@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nonresourceattributes-v1beta1.json",
+    "name": "nonresourceattributes-v1beta1",
+    "description": "NonResourceAttributes includes the authorization attributes available for non-resource requests to the Authorizer interface",
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": [
+                "string"
+            ],
+            "description": "Path is the URL path of the request"
+        },
+        "verb": {
+            "type": [
+                "string"
+            ],
+            "description": "Verb is the standard HTTP verb"
+        }
+    }
+}

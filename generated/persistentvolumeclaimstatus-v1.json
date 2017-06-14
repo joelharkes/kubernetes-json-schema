@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/persistentvolumeclaimstatus-v1.json",
+    "name": "persistentvolumeclaimstatus-v1",
+    "description": "StorageClass describes the parameters for a class of storage for which PersistentVolumes can be dynamically provisioned.",
+    "type": "object",
+    "properties": {
+        "accessModes": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "AccessModes contains the actual access modes the volume backing the PVC has. More info: http://kubernetes.io/docs/user-guide/persistent-volumes#access-modes-1"
+        },
+        "capacity": {
+            "type": [
+                "object"
+            ],
+            "description": "Represents the actual resources of the underlying volume."
+        },
+        "phase": {
+            "type": [
+                "string"
+            ],
+            "description": "Phase represents the current phase of PersistentVolumeClaim."
+        }
+    }
+}

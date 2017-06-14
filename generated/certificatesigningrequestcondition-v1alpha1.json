@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/certificatesigningrequestcondition-v1alpha1.json",
+    "name": "certificatesigningrequestcondition-v1alpha1",
+    "description": "Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling.",
+    "type": "object",
+    "properties": {
+        "lastUpdateTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "message": {
+            "type": [
+                "string"
+            ],
+            "description": "human readable message with details about the request state"
+        },
+        "reason": {
+            "type": [
+                "string"
+            ],
+            "description": "brief reason for the request state"
+        },
+        "type": {
+            "type": [
+                "string"
+            ],
+            "description": "request approval state, currently Approved or Denied."
+        }
+    }
+}

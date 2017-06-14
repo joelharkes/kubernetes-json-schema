@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/certificatesigningrequeststatus-v1alpha1.json",
+    "name": "certificatesigningrequeststatus-v1alpha1",
+    "description": "ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a unit by a RoleBinding or ClusterRoleBinding.",
+    "type": "object",
+    "properties": {
+        "certificate": {
+            "type": [
+                "string"
+            ],
+            "description": "If request was approved, the controller will place the issued certificate here."
+        },
+        "conditions": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/certificatesigningrequestcondition-v1alpha1.json"
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/replicasetstatus-v1beta1.json",
+    "name": "replicasetstatus-v1beta1",
+    "description": "ReplicationController represents the configuration of a replication controller.",
+    "type": "object",
+    "properties": {
+        "availableReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "The number of available replicas (ready for at least minReadySeconds) for this replica set."
+        },
+        "conditions": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/replicasetcondition-v1beta1.json"
+            }
+        },
+        "fullyLabeledReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "The number of pods that have labels matching the labels of the pod template of the replicaset."
+        },
+        "observedGeneration": {
+            "type": [
+                "integer"
+            ],
+            "description": "ObservedGeneration reflects the generation of the most recently observed ReplicaSet."
+        },
+        "readyReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "The number of ready replicas for this replica set."
+        },
+        "replicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "Replicas is the most recently oberved number of replicas. More info: http://kubernetes.io/docs/user-guide/replication-controller#what-is-a-replication-controller"
+        }
+    }
+}

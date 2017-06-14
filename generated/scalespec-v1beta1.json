@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/scalespec-v1beta1.json",
+    "name": "scalespec-v1beta1",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "replicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "desired number of instances for the scaled object."
+        }
+    }
+}

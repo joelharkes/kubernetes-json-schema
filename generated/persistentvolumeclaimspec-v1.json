@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/persistentvolumeclaimspec-v1.json",
+    "name": "persistentvolumeclaimspec-v1",
+    "description": "StorageClass describes the parameters for a class of storage for which PersistentVolumes can be dynamically provisioned.",
+    "type": "object",
+    "properties": {
+        "accessModes": {
+            "type": [
+                "string",
+                "array"
+            ],
+            "description": "AccessModes contains the desired access modes the volume should have. More info: http://kubernetes.io/docs/user-guide/persistent-volumes#access-modes-1"
+        },
+        "resources": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/resourcerequirements-v1.json"
+        },
+        "selector": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/labelselector-unversioned.json"
+        },
+        "volumeName": {
+            "type": [
+                "string"
+            ],
+            "description": "VolumeName is the binding reference to the PersistentVolume backing this claim."
+        }
+    }
+}

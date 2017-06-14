@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/downwardapivolumefile-v1.json",
+    "name": "downwardapivolumefile-v1",
+    "description": "DownwardAPIVolumeFile represents information to create the file containing the pod field",
+    "type": "object",
+    "properties": {
+        "fieldRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/objectfieldselector-v1.json"
+        },
+        "mode": {
+            "type": [
+                "integer"
+            ],
+            "description": "Optional: mode bits to use on this file, must be a value between 0 and 0777. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set."
+        },
+        "path": {
+            "type": [
+                "string"
+            ],
+            "description": "Required: Path is  the relative path name of the file to be created. Must not be absolute or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must not start with '..'"
+        },
+        "resourceFieldRef": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/resourcefieldselector-v1.json"
+        }
+    }
+}

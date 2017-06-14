@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nodeaddress-v1.json",
+    "name": "nodeaddress-v1",
+    "description": "NodeAddress contains information for the node's address.",
+    "type": "object",
+    "properties": {
+        "address": {
+            "type": [
+                "string"
+            ],
+            "description": "The node address."
+        },
+        "type": {
+            "type": [
+                "string"
+            ],
+            "description": "Node address type, one of Hostname, ExternalIP or InternalIP."
+        }
+    }
+}

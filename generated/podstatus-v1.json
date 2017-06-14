@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/podstatus-v1.json",
+    "name": "podstatus-v1",
+    "description": "ReplicaSet represents the configuration of a ReplicaSet.",
+    "type": "object",
+    "properties": {
+        "conditions": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/podcondition-v1.json"
+            }
+        },
+        "containerStatuses": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/containerstatus-v1.json"
+            }
+        },
+        "hostIP": {
+            "type": [
+                "string"
+            ],
+            "description": "IP address of the host to which the pod is assigned. Empty if not yet scheduled."
+        },
+        "message": {
+            "type": [
+                "string"
+            ],
+            "description": "A human readable message indicating details about why the pod is in this condition."
+        },
+        "phase": {
+            "type": [
+                "string"
+            ],
+            "description": "Current condition of the pod. More info: http://kubernetes.io/docs/user-guide/pod-states#pod-phase"
+        },
+        "podIP": {
+            "type": [
+                "string"
+            ],
+            "description": "IP address allocated to the pod. Routable at least within the cluster. Empty if not yet allocated."
+        },
+        "reason": {
+            "type": [
+                "string"
+            ],
+            "description": "A brief CamelCase message indicating details about why the pod is in this state. e.g. 'OutOfDisk'"
+        },
+        "startTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        }
+    }
+}

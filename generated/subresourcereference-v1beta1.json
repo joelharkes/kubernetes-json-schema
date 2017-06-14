@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/subresourcereference-v1beta1.json",
+    "name": "subresourcereference-v1beta1",
+    "description": "SubresourceReference contains enough information to let you inspect or modify the referred subresource.",
+    "type": "object",
+    "properties": {
+        "apiVersion": {
+            "type": [
+                "string"
+            ],
+            "description": "API version of the referent"
+        },
+        "kind": {
+            "type": [
+                "string"
+            ],
+            "description": "Kind of the referent; More info: http://releases.k8s.io/HEAD/docs/devel/api-conventions.md#types-kinds"
+        },
+        "name": {
+            "type": [
+                "string"
+            ],
+            "description": "Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names"
+        },
+        "subresource": {
+            "type": [
+                "string"
+            ],
+            "description": "Subresource name of the referent"
+        }
+    }
+}

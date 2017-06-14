@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/rawextension-runtime.json",
+    "name": "rawextension-runtime",
+    "description": "RawExtension is used to hold extensions in external versions.",
+    "type": "object",
+    "properties": {
+        "Raw": {
+            "type": [
+                "string"
+            ],
+            "description": "Raw is the underlying serialization of this object."
+        }
+    }
+}

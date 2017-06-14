@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/replicasetcondition-v1beta1.json",
+    "name": "replicasetcondition-v1beta1",
+    "description": "ReplicaSetCondition describes the state of a replica set at a certain point.",
+    "type": "object",
+    "properties": {
+        "lastTransitionTime": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/time-unversioned.json"
+        },
+        "message": {
+            "type": [
+                "string"
+            ],
+            "description": "A human readable message indicating details about the transition."
+        },
+        "reason": {
+            "type": [
+                "string"
+            ],
+            "description": "The reason for the condition's last transition."
+        },
+        "status": {
+            "type": [
+                "string"
+            ],
+            "description": "Status of the condition, one of True, False, Unknown."
+        },
+        "type": {
+            "type": [
+                "string"
+            ],
+            "description": "Type of replica set condition."
+        }
+    }
+}

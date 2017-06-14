@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nodespec-v1.json",
+    "name": "nodespec-v1",
+    "description": "PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous to a node. More info: http://kubernetes.io/docs/user-guide/persistent-volumes",
+    "type": "object",
+    "properties": {
+        "externalID": {
+            "type": [
+                "string"
+            ],
+            "description": "External ID of the node assigned by some machine database (e.g. a cloud provider). Deprecated."
+        },
+        "podCIDR": {
+            "type": [
+                "string"
+            ],
+            "description": "PodCIDR represents the pod IP range assigned to the node."
+        },
+        "providerID": {
+            "type": [
+                "string"
+            ],
+            "description": "ID of the node assigned by the cloud provider in the format: ://"
+        },
+        "unschedulable": {
+            "type": [
+                "boolean"
+            ],
+            "description": "Unschedulable controls node schedulability of new pods. By default, node is schedulable. More info: http://releases.k8s.io/HEAD/docs/admin/node.md#manual-node-administration\""
+        }
+    }
+}

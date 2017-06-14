@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/rollbackconfig-v1beta1.json",
+    "name": "rollbackconfig-v1beta1",
+    "description": "SELinuxOptions are the labels to be applied to the container",
+    "type": "object",
+    "properties": {
+        "revision": {
+            "type": [
+                "integer"
+            ],
+            "description": "The revision to rollback to. If set to 0, rollbck to the last revision."
+        }
+    }
+}

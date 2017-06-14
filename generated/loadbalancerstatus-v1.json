@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/loadbalancerstatus-v1.json",
+    "name": "loadbalancerstatus-v1",
+    "description": "LoadBalancerStatus represents the status of a load-balancer.",
+    "type": "object",
+    "properties": {
+        "ingress": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/loadbalanceringress-v1.json"
+            }
+        }
+    }
+}

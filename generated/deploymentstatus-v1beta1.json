@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/deploymentstatus-v1beta1.json",
+    "name": "deploymentstatus-v1beta1",
+    "description": "Job represents the configuration of a single job.",
+    "type": "object",
+    "properties": {
+        "availableReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "Total number of available pods (ready for at least minReadySeconds) targeted by this deployment."
+        },
+        "conditions": {
+            "type": "array",
+            "items": {
+                "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/deploymentcondition-v1beta1.json"
+            }
+        },
+        "observedGeneration": {
+            "type": [
+                "integer"
+            ],
+            "description": "The generation observed by the deployment controller."
+        },
+        "replicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "Total number of non-terminated pods targeted by this deployment (their labels match the selector)."
+        },
+        "unavailableReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "Total number of unavailable pods targeted by this deployment."
+        },
+        "updatedReplicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "Total number of non-terminated pods targeted by this deployment that have the desired template spec."
+        }
+    }
+}

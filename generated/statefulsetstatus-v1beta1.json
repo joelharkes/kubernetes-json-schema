@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/statefulsetstatus-v1beta1.json",
+    "name": "statefulsetstatus-v1beta1",
+    "description": "Discovery and Load Balancing resources are responsible for stitching your workloads together into an accessible Loadbalanced Service.  By default,\nWorkloads are only accessible within the cluster, and they must be exposed externally using a either\na LoadBalancer or NodePort Service.  For development, internally accessible\nWorkloads can be accessed via proxy through the api master using the kubectl proxy command.",
+    "type": "object",
+    "properties": {
+        "observedGeneration": {
+            "type": [
+                "integer"
+            ],
+            "description": "most recent generation observed by this autoscaler."
+        },
+        "replicas": {
+            "type": [
+                "integer"
+            ],
+            "description": "Replicas is the number of actual replicas."
+        }
+    }
+}

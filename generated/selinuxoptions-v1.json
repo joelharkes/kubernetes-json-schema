@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/selinuxoptions-v1.json",
+    "name": "selinuxoptions-v1",
+    "description": "SELinuxOptions are the labels to be applied to the container",
+    "type": "object",
+    "properties": {
+        "level": {
+            "type": [
+                "string"
+            ],
+            "description": "Level is SELinux level label that applies to the container."
+        },
+        "role": {
+            "type": [
+                "string"
+            ],
+            "description": "Role is a SELinux role label that applies to the container."
+        },
+        "type": {
+            "type": [
+                "string"
+            ],
+            "description": "Type is a SELinux type label that applies to the container."
+        },
+        "user": {
+            "type": [
+                "string"
+            ],
+            "description": "User is a SELinux user label that applies to the container."
+        }
+    }
+}

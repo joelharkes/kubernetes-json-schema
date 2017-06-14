@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/selfsubjectaccessreviewspec-v1beta1.json",
+    "name": "selfsubjectaccessreviewspec-v1beta1",
+    "description": "ServiceAccount binds together:  a name, understood by users, and perhaps by peripheral systems, for an identity  a principal that can be authenticated and authorized * a set of secrets",
+    "type": "object",
+    "properties": {
+        "nonResourceAttributes": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/nonresourceattributes-v1beta1.json"
+        },
+        "resourceAttributes": {
+            "$ref": "https://raw.githubusercontent.com/joelharkes/kubernetes-json-schema/master/generated/resourceattributes-v1beta1.json"
+        }
+    }
+}
