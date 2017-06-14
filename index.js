@@ -22,7 +22,10 @@ jsdom.env('https://kubernetes.io/docs/resources-reference/v1.5/', function (err,
 function writeSchemas(schemas = []) {
     schemas.forEach(schema => {
         var file = path.resolve("generated", `${schema.name}.json`);
-        fs.writeFile(file, JSON.stringify(schema, null, 4), () => { })
+        var json = JSON.stringify(schema, null, 4);
+        if(process.env.USE_CRLF)
+            json = json.replace(/\n/g,'\r\n');
+        fs.writeFile(file, json, () => { })
     })
 }
 
