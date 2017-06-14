@@ -1,0 +1,28 @@
+{
+  "name": "kubernetes-json-schema",
+  "version": "1.0.0",
+  "description": "conversion from kubernetes api to config",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelharkes/kubernetes-json-config.git"
+  },
+  "keywords": [
+    "kubernetes",
+    "config",
+    "json"
+  ],
+  "author": "joelharkes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joelharkes/kubernetes-json-config/issues"
+  },
+  "homepage": "https://github.com/joelharkes/kubernetes-json-config#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jsdom": "^9.11.0"
+  }
+}
