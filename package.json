@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/joelharkes/kubernetes-json-config#readme",
   "dependencies": {
-    "jquery": "^3.1.1",
-    "jsdom": "^9.11.0"
+    "jquery": "^3.6.1",
+    "jsdom": "^20.0.0"
   }
 }
